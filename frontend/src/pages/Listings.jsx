@@ -262,11 +262,7 @@ const Listings = () => {
   
 
     if (hasError) {
-      setErrorTxt(
-          name === 'priceMin'
-            ? `Minimum price must be between ${PRICE_MIN} and ${PRICE_MAX}.`
-            : `Maximum price must be between ${PRICE_MIN} and ${PRICE_MAX}.`
-          );
+     setErrorTxt(`Price must be between ${PRICE_MIN} and ${PRICE_MAX}.`);
       setFilters({
         ...filters ,
         [name] : ''
